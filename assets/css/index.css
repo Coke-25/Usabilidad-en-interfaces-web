@@ -1,0 +1,453 @@
+/* General */
+.container {
+  max-width: 1200px;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  font-family: 'Black Ops One', cursive;
+}
+h2{
+  font-family: 'Kreon', serif;
+}
+b{
+  font-weight: bold;
+  color:#0054d1;
+}
+hr{
+  margin-left: 1rem; margin-right: 1rem;
+}
+/*ScrollBar*/
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #0c3c60;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #DDEF3F;
+  border-radius: 10px;
+}
+
+/*Color de selección*/
+*::selection{
+  background: #0c3c60;
+  color: #DDEF3F;
+}
+
+/* Nombre de la empresa */
+#p1{
+  color: #DDEF3F;
+  font-size: 22px;
+  font-family: 'Kreon', serif;
+}
+#p2{
+  color: #EDE9E9;
+  font-size: 22px;
+  font-family: 'Kreon', serif;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #0c3c60;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  font-size: 19px;
+  font-family: 'Kreon', serif;
+  padding: 0px!important;
+}
+.logo{
+  margin-left: 1vw;
+}
+@media (min-width: 1266px)
+{
+  nav a {
+    color: white!important;
+    transition: ease-in-out color .15s;
+    margin-left: 4vw;
+  }
+}
+@media (max-width: 1265px)
+{
+  nav a {
+    color: white!important;
+    transition: ease-in-out color .15s;
+    margin-left: 2vw;
+  }
+}
+@media (max-width: 1060px)
+{
+  nav a {
+    color: white!important;
+    transition: ease-in-out color .15s;
+    margin-left: 1.5vw;
+  }
+}
+nav a:hover {
+  color: rgb(160, 160, 160)!important;
+  text-decoration: none;
+}
+
+nav .precios{
+  background-color: #DDEF3F;
+  border-radius: 20px;
+  color: black!important;
+}
+@media (max-width: 1060px)
+{
+  nav .precios{
+    width: 63px;
+  }
+}
+.buscadorForm{
+  padding: 0px 1vw 0px 0px;
+}
+.buscador{
+  margin: 8px 0px 5px 0px;
+  border-radius: 5px 0px 0px 5px;
+}
+.botonBuscador{
+  width: 70px;
+  height: 38px;
+  margin: 8px 0px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+  color: #DDEF3F;
+}
+.botonBuscador:hover{
+  background-color: #DDEF3F;
+  color: #0c3c60;
+}
+@media (max-width: 497px){
+  .logo{
+    display: none;
+  }
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*Inicio*/
+#portada
+{
+  background-image: url(../img/portada.jpg);
+  background-size: auto;
+  background-position-y: -40vh;
+  color: white;
+}
+#dentroPortada{
+  max-width: 60vw!important;
+  margin-top: 2rem!important;
+}
+#dentroPortada>h1{
+  color: #DDEF3F;
+  font-size: 6vw;
+  text-shadow: 5px 5px black;
+}
+#dentroPortada>h2{
+  margin-top: 10vh;
+  text-shadow: 2px 2px black;
+  font-size: 25px;
+}
+.zonaTelefono{
+  height: 5vh;
+}
+.zonaTelefono>b{
+  font-size: 35px;
+  text-shadow: 2px 2px black;
+  color: #DDEF3F;
+  margin-top: 5vh;
+}
+#telefono{
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 640px)
+{
+  #dentroPortada>h1{
+    font-size: 9vw;
+  }
+  #dentroPortada>h2{
+    font-size: 5vw;
+  }
+  .zonaTelefono{
+    padding-bottom:3rem!important;
+  }
+}
+
+
+.inicioInfo{
+  padding: 4rem!important;
+}
+.inicioInfo>h2{
+  font-size: 3rem;
+}
+#bosque{
+  width: 30vw;
+  margin:auto;
+  text-align: center;
+}
+#bosque>img{
+  width: inherit;
+}
+.featurette{
+  width: 97vw;
+  margin: 1rem!important;
+}
+@media (max-width:992px)
+{
+  #bosque{
+    width: 50vw;
+  }
+  .inicioInfo{
+    padding: 3rem!important;
+  }
+}
+@media (max-width:768px)
+{
+  #bosque{
+    width: 70vw;
+  }
+  .featurette{
+    width: unset;
+    margin: unset!important;
+  }
+  .inicioInfo{
+    padding: 1rem!important;
+  }
+}
+
+.inicioParrafo1{
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.inicioParrafo2{
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+.inicioParrafo3{
+  padding: 3rem 4rem 1rem 3rem;
+}
+.inicioParrafo1 h2{
+  font-size: 3rem;
+}
+.inicioParrafo2 h2{
+  font-size: 3rem;
+}
+.inicioParrafo3 h2{
+  font-size: 3rem;
+}
+
+.separador img{
+  width: 100%;
+}
+
+
+/* tipos */
+#infotipos{
+  margin: 1rem;
+}
+#infotipos h1{
+  font-size: 5vw;
+  padding-bottom: 4vh;
+}
+#beneficiostipos h2{
+  font-size: 3vw;
+}
+.portadaInfo h2{
+  font-size: 3vw;
+  padding-top: 4vh;
+}
+#destello{
+  width:17em;
+  margin-bottom: 3vh;
+}
+#gota{
+  width: 12em;
+  margin-bottom: 1rem;
+}
+#bombona{
+  width: 30vw;
+  margin:auto;
+  text-align: center;
+}
+#bombona>img{
+  width: inherit;
+}
+@media (max-width: 992px){
+  #bombona{
+    width: 50vw;
+  }
+}
+@media (max-width: 768px){
+  #bombona{
+    width: 70vw;
+  }
+}
+@media (max-width: 400px){
+  #infotipos h1{
+    font-size: 14vw;
+  }
+}
+
+.tiposParrafos{
+  padding: 3rem;
+}
+.tiposParrafos h2{
+  font-size: 3rem;
+}
+
+/* Quienes somos */
+#quienes{
+  margin: 1rem;
+}
+#instagram{
+  width: 2em;
+  margin-left: 0.5vw;
+}
+#facebook{
+  width: 2em;
+  margin-left: 2vw;
+}
+
+.subquienes{
+  margin: 1rem;
+}
+.subquienes img{
+  width: 200px;
+  height: 250px;
+}
+.opinion h2{
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+/* Contacto */
+.divContacta{
+  margin: 1rem;
+}
+.divContacta img{
+  width: 200px;
+  height: 250px;
+}
+.fondoContacta{
+  background-image: url("../img/arboles.jpg");
+  background-position-y: center;
+}
+.infoContacta{
+  margin-top: 5rem;
+}
+.infoContacta>*{
+  margin: 1rem 1rem 1rem 3rem;
+}
+.infoContacta>b{
+  font-size: 3rem!important;
+}
+.infoContacta>#p2{
+  color: white;
+}
+form{
+  padding: 2rem;
+  vertical-align: middle;
+}
+form>*{
+  width: 20vw;
+  height: 6vh;
+  margin-top: 1rem;
+}
+textarea{
+  height: 10vh;
+}
+@media (max-width: 992px){
+  form>*{
+    width: 100%;
+  }
+}
+@media (max-width: 550px){
+  .infoContacta h2{
+    font-size: 5vw;
+  }
+}
+
+/* Precios */
+.ventas{
+  margin: 4rem;
+}
+.container>h1{
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 2rem!important;
+}
+@media (max-width: 500px){
+  .ventas{
+    margin: 1rem;;
+  }
+}
+
+/* Preguntas */
+#fondoPreguntas{
+  background-color: #e9ecef;
+  margin: 1rem auto  1rem auto;
+  border-radius: 3px;
+}
+#fondoPreguntas h2{
+  font-size: 3vw;
+}
+#fondoPreguntas>*>*{
+  padding: 2rem;
+}
+.expList ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+}
+.expList li {
+  list-style: none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  text-indent:0px;
+  background-position: 1px 8px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+.expList .el_collapsed {
+  background-image: url(../img/suma.svg);
+  background-size: 1.2rem;
+}
+
+.expList .el_expanded {
+  background-image: url(../img/menos.svg);
+}
